@@ -8,7 +8,10 @@ const dist = './dist/';
 // const dist = '../../../../../../MAMP/htdocs/tests';
 
 gulp.task('copy-html', () => {
-  return gulp.src('./src/index.html').pipe(gulp.dest(dist)).pipe(browsersync.stream());
+  // prettier-ignore
+  return gulp.src("./src/index.html")
+              .pipe(gulp.dest(dist))
+              .pipe(browsersync.stream());
 });
 
 gulp.task('build-js', () => {
