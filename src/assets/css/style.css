@@ -18,6 +18,20 @@ body {
   color: red;
 }
 
+.faded {
+  animation-name: faded;
+  animation-duration: 1.5s;
+}
+
+@keyframes faded {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -397,8 +411,20 @@ textarea:focus {
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   border-top: 0.5rem solid #0089cd;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c7dce9), color-stop(0%, #c7dce9), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, #c7dce9 0%, #c7dce9 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#c7dce9),
+    color-stop(0%, #c7dce9),
+    to(rgba(255, 255, 255, 0))
+  );
+  background: linear-gradient(
+    180deg,
+    #c7dce9 0%,
+    #c7dce9 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 .glazing_cold h3 {
@@ -418,8 +444,20 @@ textarea:focus {
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   border-top: 0.5rem solid #ffb903;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f7eac9), color-stop(0%, #f7eac9), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, #f7eac9 0%, #f7eac9 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f7eac9),
+    color-stop(0%, #f7eac9),
+    to(rgba(255, 255, 255, 0))
+  );
+  background: linear-gradient(
+    180deg,
+    #f7eac9 0%,
+    #f7eac9 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 .glazing_warm h3 {
@@ -538,8 +576,20 @@ textarea:focus {
   border-top: 1rem solid #0089cd;
   height: 8rem;
   padding: 2rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), color-stop(0%, #ebebeb), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, #ebebeb 0%, #ebebeb 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ebebeb),
+    color-stop(0%, #ebebeb),
+    to(rgba(255, 255, 255, 0))
+  );
+  background: linear-gradient(
+    180deg,
+    #ebebeb 0%,
+    #ebebeb 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 .decoration_content {
@@ -589,7 +639,7 @@ textarea:focus {
   margin-bottom: 3rem;
 }
 
-.works a[data-fancybox="gallery"] .lupa {
+.works a[data-fancybox='gallery'] .lupa {
   /* position: ; */
   top: 0;
   left: 0;
@@ -602,7 +652,7 @@ textarea:focus {
   transition: ease 0.2s;
 }
 
-.works a[data-fancybox="gallery"]:hover .lupa {
+.works a[data-fancybox='gallery']:hover .lupa {
   opacity: 1;
 }
 
@@ -682,9 +732,8 @@ textarea:focus {
   line-height: 1.6;
 }
 
-
 /* Timer */
- .timer1 {
+.timer1 {
   padding: 10px;
   border: 1px solid grey;
   background-color: white;
@@ -697,34 +746,26 @@ textarea:focus {
 
 .container1 {
   display: inline-block;
-
 }
 .numbers1 {
   display: block;
-  float: left;  
+  float: left;
   color: white;
   font-size: 40px;
   margin-right: 10px;
 }
 
-.timer1 span{
+.timer1 span {
   margin-right: 2px;
   background-color: #575757;
   border-radius: 7px;
   padding: 4px;
 }
-.description1{
+.description1 {
   font-size: 18px;
   text-align: center;
   color: black;
 }
-
-
-
-
-
-
-
 
 /*Contacts*/
 .contacts {
@@ -859,7 +900,6 @@ textarea:focus {
   z-index: 9;
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 1;
-
 }
 
 .popup_content,
@@ -937,11 +977,11 @@ textarea:focus {
   display: inline-block;
 }
 
-.do_image_more img{
-    width: 110px;
-    height: 70px;
-    cursor: pointer;
-  }
+.do_image_more img {
+  width: 110px;
+  height: 70px;
+  cursor: pointer;
+}
 
 .popup_calc_close {
   position: absolute;
@@ -1039,8 +1079,8 @@ textarea:focus {
   vertical-align: middle;
 }
 
-.popup_calc_profile_content .checkbox:checked+.checkbox-custom::before {
-  content: "";
+.popup_calc_profile_content .checkbox:checked + .checkbox-custom::before {
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -1049,7 +1089,7 @@ textarea:focus {
   left: 0;
 }
 
-.checkbox-custom[id="cold"]::before {
+.checkbox-custom[id='cold']::before {
   background: url(../img/modal_calc/check.png) center center no-repeat;
 }
 
@@ -1057,7 +1097,7 @@ textarea:focus {
   background: url();
 }
 
-.checkbox-custom[id="warm"]::before {
+.checkbox-custom[id='warm']::before {
   background: url(../img/modal_calc/check_warm.png) center center no-repeat;
 }
 
@@ -1157,7 +1197,6 @@ textarea:focus {
   .payment_img img {
     margin-right: 1rem;
   }
-
 }
 
 @media (max-width: 991px) {
@@ -1210,7 +1249,6 @@ textarea:focus {
   .header .contact_us_wrap a {
     font-size: 1.4rem;
   }
-
 
   .header .contact_us_wrap .phone_link {
     font-size: 1.15rem;
@@ -1547,8 +1585,6 @@ textarea:focus {
   .section_header_sub {
     margin-top: 1rem;
   }
-
-
 
   .header .working_hours p {
     font-size: 1.2rem;
